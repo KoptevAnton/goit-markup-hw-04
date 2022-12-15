@@ -157,13 +157,13 @@ img {
   margin: 0;
 }
 
-.icon-contacts {
-  fill: var(--secondary-text-color);
+.icon-header {
+  fill: currentColor;
 }
 
-.icon-contacts:hover,
-.icon-contacts:focus {
-  fill: var(--design-color);
+.icon-header:hover,
+.icon-header:focus {
+  fill: currentColor);
 }
 
 
@@ -203,7 +203,9 @@ img {
 }
 
 .thumb {
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   border-radius: 4px;
   width: 270px;
@@ -295,13 +297,13 @@ img {
   border-radius: 50%;
   }
 
+.link-team-social:hover svg,
+.link-team-social:focus svg {
+  fill: var(--white-color);
+  }
+
 .icon-team-social {
 fill: var(--primary-icons-color);
-}
-
-.icon-team-social:hover,
-.icon-team-social:focus {
-fill: var(--white-color);
 }
 
 .team-bgc {
@@ -316,7 +318,7 @@ fill: var(--white-color);
   gap: 30px;  
 }
 
-.item-logo {
+.link-logo {
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -326,17 +328,17 @@ fill: var(--white-color);
   border-radius: 4px;
 }
 
-.item-logo:focus,
-.item-logo:hover {
+.link-logo:hover {
   border: 1px solid var(--design-color);
+  border-radius: 4px;
+}
+
+.link-logo:hover svg {
+  fill: var(--design-color);
+
 }
 .icon-logo {
   fill: var(--primary-icons-color);
-}
-
-.icon-logo:focus,
-.icon-logo:hover {
-  fill: var(--design-color);
 }
 
 /*Footer*/
